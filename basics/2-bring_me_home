@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(cd)"
+cd /root || { echo "Failed to change directory to /root"; exit 1; }
