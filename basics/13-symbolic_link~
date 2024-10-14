@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Create a symbolic link to /bin/ls named __ls__
+ln -s /bin/ls __ls__
+
+# Check if the symbolic link was created successfully
+if [ -L __ls__ ]; then
+    echo "Symbolic link __ls__ created successfully, pointing to /bin/ls."
+else
+    echo "Failed to create symbolic link."
+fi
